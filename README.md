@@ -177,17 +177,18 @@ Potentiometer → `analogRead()` → 0–1023 → `map()` → 0–180° → LED/
 
 ## 💻 Serial Monitor Output
 
-Example:
+**Example:**
 
----------
+```text
+-------------------------
 Servo Motor Controller
----------
+-------------------------
 
 Potentiometer: 125 | Servo Angle: 22
 Potentiometer: 512 | Servo Angle: 90
 Potentiometer: 768 | Servo Angle: 135
 Potentiometer: 1023 | Servo Angle: 180
-
+```
 ## ⚠️ Current Limitation
 
 The current version uses `delay()` for buzzer timing. During the delay, the Arduino temporarily pauses program execution, so the servo and Serial Monitor do not update continuously.
