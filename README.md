@@ -184,6 +184,9 @@ Servo Motor Controller
 ---------
 
 Potentiometer: 125 | Servo Angle: 22
+Potentiometer: 512 | Servo Angle: 90
+Potentiometer: 768 | Servo Angle: 135
+Potentiometer: 1023 | Servo Angle: 180
 
 ## ⚠️ Current Limitation
 
@@ -204,6 +207,4 @@ The current version uses `delay()` for buzzer timing. During the delay, the Ardu
 **Moksh**
 
 Built as part of my Arduino and Robotics learning journey using **Tinkercad**.
-Potentiometer: 512 | Servo Angle: 90
-Potentiometer: 768 | Servo Angle: 135
-Potentiometer: 1023 | Servo Angle: 180
+
