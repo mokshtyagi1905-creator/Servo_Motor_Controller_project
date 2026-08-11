@@ -120,27 +120,17 @@ The servo is controlled using the `Servo.h` library.
 ## 🧠 Concepts Practiced
 
 - Arduino Programming
-- Analog Input
+- Analog Input & 10-bit ADC
 - `analogRead()`
-- 10-bit ADC
-- Analog-to-Digital Conversion
 - `map()`
-- Servo Motor Control
-- `Servo.h`
-- `myServo.attach()`
-- `myServo.write()`
+- Servo Motor Control with `Servo.h`
 - Digital Output
-- LEDs
-- Current-Limiting Resistors
+- LEDs & Current-Limiting Resistors
 - Buzzer Control
 - `delay()`
-- `if`, `else if`, `else`
+- Conditional Logic (`if`, `else if`, `else`)
 - Logical Operators
 - Serial Communication
-- `Serial.begin()`
-- `Serial.print()`
-- `Serial.println()`
-- Conditional Logic
 - Embedded System Control
 
 ---
@@ -171,7 +161,25 @@ The `map()` function converts:
 
 ## 🔄 Project Flow
 
-Potentiometer → `analogRead()` → 0–1023 → `map()` → 0–180° → LED/Buzzer Region → Servo → Serial Monitor
+```text
+Potentiometer
+      ↓
+analogRead()
+      ↓
+  0–1023
+      ↓
+    map()
+      ↓
+   0–180°
+      ↓
+ ┌────┴─────┐
+ ↓          ↓
+Servo    LED/Buzzer
+   \        /
+    \      /
+     ↓    ↓
+  Serial Monitor
+```
 
 ---
 
