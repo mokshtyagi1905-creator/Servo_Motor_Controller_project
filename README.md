@@ -179,7 +179,6 @@ Potentiometer → `analogRead()` → 0–1023 → `map()` → 0–180° → LED/
 
 Example:
 
-```text
 ---------
 Servo Motor Controller
 ---------
